@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/giel/etasl/ws/my_new_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/giel/etasl/ws/my_new_workspace/install -G Unix Makefiles

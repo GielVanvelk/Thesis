@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/install
+
+Name: etasl_application_test
+Description: Description of etasl_application_test
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

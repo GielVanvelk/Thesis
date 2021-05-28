@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/install
+
+Name: viz_marker
+Description: Description of viz_marker
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

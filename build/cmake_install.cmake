@@ -126,6 +126,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/giel/etasl/ws/my_new_workspace/build/gtest/cmake_install.cmake")
+  include("/home/giel/etasl/ws/my_new_workspace/build/etasl_application_test/cmake_install.cmake")
+  include("/home/giel/etasl/ws/my_new_workspace/build/viz_marker/cmake_install.cmake")
 
 endif()
 

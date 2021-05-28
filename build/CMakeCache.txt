@@ -226,6 +226,34 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
+//The directory containing a CMake configuration file for OROCOS-RTT.
+OROCOS-RTT_DIR:PATH=/opt/ros/kinetic/lib/cmake/orocos-rtt
+
+//Path to a library.
+OROCOS-RTT_RTT-MARSHALLING_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/plugins/librtt-marshalling-gnulinux.so
+
+//Path to a library.
+OROCOS-RTT_RTT-SCRIPTING_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/plugins/librtt-scripting-gnulinux.so
+
+//Disable automatic linking to targets in orocos_use_package()
+// or from dependencies in the package manifest. Auto-linking is
+// enabled by default.
+OROCOS_NO_AUTO_LINKING:BOOL=OFF
+
+//The Operating System target. One of [gnulinux lxrt macosx win32
+// xenomai]
+OROCOS_TARGET:STRING=gnulinux
+
+//Append directories in the linker search path and outside the
+// project to the INSTALL_RPATH
+ORO_INSTALL_RPATH_USE_LINK_PATH:BOOL=ON
+
+//Build packages with catkin develspace support.
+ORO_USE_CATKIN:BOOL=True
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python2
 
@@ -268,6 +296,15 @@ _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
+//The directory containing a CMake configuration file for cpp_common.
+cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
+
+//Value Computed by CMake
+etasl_application_test_BINARY_DIR:STATIC=/home/giel/etasl/ws/my_new_workspace/build/etasl_application_test
+
+//Value Computed by CMake
+etasl_application_test_SOURCE_DIR:STATIC=/home/giel/etasl/ws/my_new_workspace/src/etasl_application_test
+
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/giel/etasl/ws/my_new_workspace/build/gtest
 
@@ -307,6 +344,141 @@ gtest_force_shared_crt:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
+
+//Path to a library.
+lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for message_runtime.
+message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for rosconsole.
+rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for roscpp.
+roscpp_DIR:PATH=/opt/ros/kinetic/share/roscpp/cmake
+
+//The directory containing a CMake configuration file for roscpp_serialization.
+roscpp_serialization_DIR:PATH=/opt/ros/kinetic/share/roscpp_serialization/cmake
+
+//The directory containing a CMake configuration file for roscpp_traits.
+roscpp_traits_DIR:PATH=/opt/ros/kinetic/share/roscpp_traits/cmake
+
+//The directory containing a CMake configuration file for rosgraph_msgs.
+rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
+
+//The directory containing a CMake configuration file for rostime.
+rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
+
+//The directory containing a CMake configuration file for rtt_ros.
+rtt_ros_DIR:PATH=/opt/ros/kinetic/share/rtt_ros/cmake
+
+//Path to a library.
+rtt_ros_cpp_common_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/libcpp_common.so
+
+//Path to a library.
+rtt_ros_orocos-rtt-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/liborocos-rtt-gnulinux.so
+
+//Path to a library.
+rtt_ros_pthread_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
+
+//Path to a library.
+rtt_ros_rostime_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/librostime.so
+
+//Path to a library.
+rtt_ros_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
+
+//Path to a library.
+rtt_ros_rtt-ros-primitives-typekit-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types/librtt-ros-primitives-typekit-gnulinux.so
+
+//Path to a library.
+rtt_ros_rtt_ros-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/librtt_ros-gnulinux.so
+
+//Path to a library.
+rtt_ros_rtt_ros_service-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins/librtt_ros_service-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_cpp_common_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/libcpp_common.so
+
+//Path to a library.
+rtt_visualization_msgs_orocos-rtt-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/liborocos-rtt-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_pthread_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
+
+//Path to a library.
+rtt_visualization_msgs_rosconsole_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/librosconsole.so
+
+//Path to a library.
+rtt_visualization_msgs_rosconsole_backend_interface_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/librosconsole_backend_interface.so
+
+//Path to a library.
+rtt_visualization_msgs_rosconsole_log4cxx_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/librosconsole_log4cxx.so
+
+//Path to a library.
+rtt_visualization_msgs_roscpp_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/libroscpp.so
+
+//Path to a library.
+rtt_visualization_msgs_roscpp_serialization_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/libroscpp_serialization.so
+
+//Path to a library.
+rtt_visualization_msgs_rostime_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/librostime.so
+
+//Path to a library.
+rtt_visualization_msgs_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt-geometry_msgs-ros-transport-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types/librtt-geometry_msgs-ros-transport-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt-geometry_msgs-typekit-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types/librtt-geometry_msgs-typekit-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt-ros-primitives-transport-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/plugins/librtt-ros-primitives-transport-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt-std_msgs-ros-transport-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types/librtt-std_msgs-ros-transport-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt-std_msgs-typekit-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types/librtt-std_msgs-typekit-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt-visualization_msgs-ros-transport-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types/librtt-visualization_msgs-ros-transport-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt-visualization_msgs-typekit-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types/librtt-visualization_msgs-typekit-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt_rosservice-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins/librtt_rosservice-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt_rosservice_registry-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins/librtt_rosservice_registry-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt_rostopic-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/librtt_rostopic-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_rtt_rostopic_service-gnulinux_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins/librtt_rostopic_service-gnulinux.so
+
+//Path to a library.
+rtt_visualization_msgs_xmlrpcpp_LIBRARY:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for std_msgs.
+std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
+
+//Value Computed by CMake
+viz_marker_BINARY_DIR:STATIC=/home/giel/etasl/ws/my_new_workspace/build/viz_marker
+
+//Dependencies for the target
+viz_marker_LIB_DEPENDS:STATIC=general;imported_orocos-rtt-gnulinux_dynamic;general;/opt/ros/kinetic/lib/librtt_ros-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins/librtt_ros_service-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types/librtt-ros-primitives-typekit-gnulinux.so;general;/opt/ros/kinetic/lib/liborocos-rtt-gnulinux.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/librt.so;general;/opt/ros/kinetic/lib/librostime.so;general;/opt/ros/kinetic/lib/libcpp_common.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types/librtt-visualization_msgs-typekit-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types/librtt-visualization_msgs-ros-transport-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types/librtt-geometry_msgs-typekit-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types/librtt-geometry_msgs-ros-transport-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/plugins/librtt-ros-primitives-transport-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types/librtt-std_msgs-typekit-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types/librtt-std_msgs-ros-transport-gnulinux.so;general;/opt/ros/kinetic/lib/librtt_rostopic-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins/librtt_rostopic_service-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins/librtt_rosservice_registry-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins/librtt_rosservice-gnulinux.so;general;/opt/ros/kinetic/lib/libroscpp.so;general;/opt/ros/kinetic/lib/librosconsole.so;general;/opt/ros/kinetic/lib/librosconsole_log4cxx.so;general;/opt/ros/kinetic/lib/librosconsole_backend_interface.so;general;/opt/ros/kinetic/lib/libroscpp_serialization.so;general;/opt/ros/kinetic/lib/libxmlrpcpp.so;general;/opt/ros/kinetic/lib/librtt_ros-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins/librtt_ros_service-gnulinux.so;general;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types/librtt-ros-primitives-typekit-gnulinux.so;general;/opt/ros/kinetic/lib/liborocos-rtt-gnulinux.so;general;/usr/lib/x86_64-linux-gnu/librt.so;general;/opt/ros/kinetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/kinetic/lib/librosconsole.so;general;/opt/ros/kinetic/lib/librosconsole_log4cxx.so;general;/opt/ros/kinetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/kinetic/lib/libroscpp_serialization.so;general;/opt/ros/kinetic/lib/libxmlrpcpp.so;general;/opt/ros/kinetic/lib/librostime.so;general;/opt/ros/kinetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Value Computed by CMake
+viz_marker_SOURCE_DIR:STATIC=/home/giel/etasl/ws/my_new_workspace/src/viz_marker
+
+//The directory containing a CMake configuration file for xmlrpcpp.
+xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
 
 
 ########################
@@ -410,7 +582,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -449,6 +621,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.12()]
 //Details about finding Threads
@@ -473,10 +647,115 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OROCOS-RTT_RTT-MARSHALLING_LIBRARY
+OROCOS-RTT_RTT-MARSHALLING_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OROCOS-RTT_RTT-SCRIPTING_LIBRARY
+OROCOS-RTT_RTT-SCRIPTING_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
+__pkg_config_checked_orogen_COMP_gnulinux:INTERNAL=1
+__pkg_config_checked_rtt_ros_COMP_gnulinux:INTERNAL=1
+__pkg_config_checked_rtt_visualization_msgs_COMP_gnulinux:INTERNAL=1
+orogen_COMP_gnulinux_CFLAGS:INTERNAL=
+orogen_COMP_gnulinux_CFLAGS_I:INTERNAL=
+orogen_COMP_gnulinux_CFLAGS_OTHER:INTERNAL=
+orogen_COMP_gnulinux_FOUND:INTERNAL=
+orogen_COMP_gnulinux_INCLUDEDIR:INTERNAL=
+orogen_COMP_gnulinux_LIBDIR:INTERNAL=
+orogen_COMP_gnulinux_LIBS:INTERNAL=
+orogen_COMP_gnulinux_LIBS_L:INTERNAL=
+orogen_COMP_gnulinux_LIBS_OTHER:INTERNAL=
+orogen_COMP_gnulinux_LIBS_PATHS:INTERNAL=
+orogen_COMP_gnulinux_PREFIX:INTERNAL=
+orogen_COMP_gnulinux_STATIC_CFLAGS:INTERNAL=
+orogen_COMP_gnulinux_STATIC_CFLAGS_I:INTERNAL=
+orogen_COMP_gnulinux_STATIC_CFLAGS_OTHER:INTERNAL=
+orogen_COMP_gnulinux_STATIC_LIBDIR:INTERNAL=
+orogen_COMP_gnulinux_STATIC_LIBS:INTERNAL=
+orogen_COMP_gnulinux_STATIC_LIBS_L:INTERNAL=
+orogen_COMP_gnulinux_STATIC_LIBS_OTHER:INTERNAL=
+orogen_COMP_gnulinux_STATIC_LIBS_PATHS:INTERNAL=
+orogen_COMP_gnulinux_VERSION:INTERNAL=
+orogen_COMP_gnulinux_orogen-gnulinux_INCLUDEDIR:INTERNAL=
+orogen_COMP_gnulinux_orogen-gnulinux_LIBDIR:INTERNAL=
+orogen_COMP_gnulinux_orogen-gnulinux_PREFIX:INTERNAL=
+orogen_COMP_gnulinux_orogen-gnulinux_VERSION:INTERNAL=
+prefix_result:INTERNAL=/opt/ros/kinetic/lib
+rtt_ros_COMP_gnulinux_CFLAGS:INTERNAL=-DOROCOS_TARGET=gnulinux;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include
+rtt_ros_COMP_gnulinux_CFLAGS_I:INTERNAL=
+rtt_ros_COMP_gnulinux_CFLAGS_OTHER:INTERNAL=-DOROCOS_TARGET=gnulinux
+rtt_ros_COMP_gnulinux_FOUND:INTERNAL=1
+rtt_ros_COMP_gnulinux_INCLUDEDIR:INTERNAL=/opt/ros/kinetic/include/orocos
+rtt_ros_COMP_gnulinux_INCLUDE_DIRS:INTERNAL=/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include
+rtt_ros_COMP_gnulinux_LDFLAGS:INTERNAL=-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types;-L/opt/ros/kinetic/lib;-lrtt_ros-gnulinux;-lrtt_ros_service-gnulinux;-lrtt-ros-primitives-typekit-gnulinux;-lorocos-rtt-gnulinux;-lpthread;-lrt;-lrostime;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;-lcpp_common;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_ros_COMP_gnulinux_LDFLAGS_OTHER:INTERNAL=/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_ros_COMP_gnulinux_LIBDIR:INTERNAL=/opt/ros/kinetic/lib
+rtt_ros_COMP_gnulinux_LIBRARIES:INTERNAL=rtt_ros-gnulinux;rtt_ros_service-gnulinux;rtt-ros-primitives-typekit-gnulinux;orocos-rtt-gnulinux;pthread;rt;rostime;cpp_common
+rtt_ros_COMP_gnulinux_LIBRARY_DIRS:INTERNAL=/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types;/opt/ros/kinetic/lib
+rtt_ros_COMP_gnulinux_LIBS:INTERNAL=
+rtt_ros_COMP_gnulinux_LIBS_L:INTERNAL=
+rtt_ros_COMP_gnulinux_LIBS_OTHER:INTERNAL=
+rtt_ros_COMP_gnulinux_LIBS_PATHS:INTERNAL=
+rtt_ros_COMP_gnulinux_PREFIX:INTERNAL=/opt/ros/kinetic
+rtt_ros_COMP_gnulinux_STATIC_CFLAGS:INTERNAL=-DOROCOS_TARGET=gnulinux;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include
+rtt_ros_COMP_gnulinux_STATIC_CFLAGS_I:INTERNAL=
+rtt_ros_COMP_gnulinux_STATIC_CFLAGS_OTHER:INTERNAL=-DOROCOS_TARGET=gnulinux
+rtt_ros_COMP_gnulinux_STATIC_INCLUDE_DIRS:INTERNAL=/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include
+rtt_ros_COMP_gnulinux_STATIC_LDFLAGS:INTERNAL=-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types;-L/opt/ros/kinetic/lib;-lrtt_ros-gnulinux;-lrtt_ros_service-gnulinux;-lrtt-ros-primitives-typekit-gnulinux;-lorocos-rtt-gnulinux;-lpthread;-lrt;-lboost_filesystem;-lboost_system;-lboost_serialization;-lpthread;-lrt;-ldl;-lrostime;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;-lcpp_common;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_ros_COMP_gnulinux_STATIC_LDFLAGS_OTHER:INTERNAL=/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_ros_COMP_gnulinux_STATIC_LIBDIR:INTERNAL=
+rtt_ros_COMP_gnulinux_STATIC_LIBRARIES:INTERNAL=rtt_ros-gnulinux;rtt_ros_service-gnulinux;rtt-ros-primitives-typekit-gnulinux;orocos-rtt-gnulinux;pthread;rt;boost_filesystem;boost_system;boost_serialization;pthread;rt;dl;rostime;cpp_common
+rtt_ros_COMP_gnulinux_STATIC_LIBRARY_DIRS:INTERNAL=/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/plugins;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_ros/types;/opt/ros/kinetic/lib
+rtt_ros_COMP_gnulinux_STATIC_LIBS:INTERNAL=
+rtt_ros_COMP_gnulinux_STATIC_LIBS_L:INTERNAL=
+rtt_ros_COMP_gnulinux_STATIC_LIBS_OTHER:INTERNAL=
+rtt_ros_COMP_gnulinux_STATIC_LIBS_PATHS:INTERNAL=
+rtt_ros_COMP_gnulinux_VERSION:INTERNAL=2.9.2
+rtt_ros_COMP_gnulinux_rtt_ros-gnulinux_INCLUDEDIR:INTERNAL=
+rtt_ros_COMP_gnulinux_rtt_ros-gnulinux_LIBDIR:INTERNAL=
+rtt_ros_COMP_gnulinux_rtt_ros-gnulinux_PREFIX:INTERNAL=
+rtt_ros_COMP_gnulinux_rtt_ros-gnulinux_VERSION:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_CFLAGS:INTERNAL=-DOROCOS_TARGET=gnulinux;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include
+rtt_visualization_msgs_COMP_gnulinux_CFLAGS_I:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_CFLAGS_OTHER:INTERNAL=-DOROCOS_TARGET=gnulinux
+rtt_visualization_msgs_COMP_gnulinux_FOUND:INTERNAL=1
+rtt_visualization_msgs_COMP_gnulinux_INCLUDEDIR:INTERNAL=/opt/ros/kinetic/include/orocos
+rtt_visualization_msgs_COMP_gnulinux_INCLUDE_DIRS:INTERNAL=/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include;/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include;/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include
+rtt_visualization_msgs_COMP_gnulinux_LDFLAGS:INTERNAL=-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types;-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types;-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/plugins;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types;-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins;-L/opt/ros/kinetic/lib;-lrtt-visualization_msgs-typekit-gnulinux;-lrtt-visualization_msgs-ros-transport-gnulinux;-lrtt-geometry_msgs-typekit-gnulinux;-lrtt-geometry_msgs-ros-transport-gnulinux;-lrtt-ros-primitives-transport-gnulinux;-lrtt-std_msgs-typekit-gnulinux;-lrtt-std_msgs-ros-transport-gnulinux;-lrtt_rostopic-gnulinux;-lrtt_rostopic_service-gnulinux;-lrtt_rosservice_registry-gnulinux;-lrtt_rosservice-gnulinux;-lorocos-rtt-gnulinux;-lpthread;-lrt;-lroscpp;-lpthread;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_signals.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;-lrosconsole;-lrosconsole_log4cxx;-lrosconsole_backend_interface;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;-lroscpp_serialization;-lxmlrpcpp;-lrostime;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;-lcpp_common;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_visualization_msgs_COMP_gnulinux_LDFLAGS_OTHER:INTERNAL=/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_signals.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_visualization_msgs_COMP_gnulinux_LIBDIR:INTERNAL=/opt/ros/kinetic/lib
+rtt_visualization_msgs_COMP_gnulinux_LIBRARIES:INTERNAL=rtt-visualization_msgs-typekit-gnulinux;rtt-visualization_msgs-ros-transport-gnulinux;rtt-geometry_msgs-typekit-gnulinux;rtt-geometry_msgs-ros-transport-gnulinux;rtt-ros-primitives-transport-gnulinux;rtt-std_msgs-typekit-gnulinux;rtt-std_msgs-ros-transport-gnulinux;rtt_rostopic-gnulinux;rtt_rostopic_service-gnulinux;rtt_rosservice_registry-gnulinux;rtt_rosservice-gnulinux;orocos-rtt-gnulinux;pthread;rt;roscpp;pthread;rosconsole;rosconsole_log4cxx;rosconsole_backend_interface;roscpp_serialization;xmlrpcpp;rostime;cpp_common
+rtt_visualization_msgs_COMP_gnulinux_LIBRARY_DIRS:INTERNAL=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types;/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types;/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/plugins;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types;/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins;/opt/ros/kinetic/lib
+rtt_visualization_msgs_COMP_gnulinux_LIBS:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_LIBS_L:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_LIBS_OTHER:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_LIBS_PATHS:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_PREFIX:INTERNAL=/opt/ros/kinetic
+rtt_visualization_msgs_COMP_gnulinux_STATIC_CFLAGS:INTERNAL=-DOROCOS_TARGET=gnulinux;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include;-I/opt/ros/kinetic/include/orocos;-I/opt/ros/kinetic/include
+rtt_visualization_msgs_COMP_gnulinux_STATIC_CFLAGS_I:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_STATIC_CFLAGS_OTHER:INTERNAL=-DOROCOS_TARGET=gnulinux
+rtt_visualization_msgs_COMP_gnulinux_STATIC_INCLUDE_DIRS:INTERNAL=/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include;/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include;/opt/ros/kinetic/include/orocos;/opt/ros/kinetic/include
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LDFLAGS:INTERNAL=-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types;-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types;-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/plugins;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types;-L/opt/ros/kinetic/lib;-L/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins;-L/opt/ros/kinetic/lib;-lrtt-visualization_msgs-typekit-gnulinux;-lrtt-visualization_msgs-ros-transport-gnulinux;-lrtt-geometry_msgs-typekit-gnulinux;-lrtt-geometry_msgs-ros-transport-gnulinux;-lrtt-ros-primitives-transport-gnulinux;-lrtt-std_msgs-typekit-gnulinux;-lrtt-std_msgs-ros-transport-gnulinux;-lrtt_rostopic-gnulinux;-lrtt_rostopic_service-gnulinux;-lrtt_rosservice_registry-gnulinux;-lrtt_rosservice-gnulinux;-lorocos-rtt-gnulinux;-lpthread;-lrt;-lboost_filesystem;-lboost_system;-lboost_serialization;-lpthread;-lrt;-ldl;-lroscpp;-lpthread;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_signals.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;-lrosconsole;-lrosconsole_log4cxx;-lrosconsole_backend_interface;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;-lroscpp_serialization;-lxmlrpcpp;-lrostime;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;-lcpp_common;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LDFLAGS_OTHER:INTERNAL=/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_signals.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LIBDIR:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LIBRARIES:INTERNAL=rtt-visualization_msgs-typekit-gnulinux;rtt-visualization_msgs-ros-transport-gnulinux;rtt-geometry_msgs-typekit-gnulinux;rtt-geometry_msgs-ros-transport-gnulinux;rtt-ros-primitives-transport-gnulinux;rtt-std_msgs-typekit-gnulinux;rtt-std_msgs-ros-transport-gnulinux;rtt_rostopic-gnulinux;rtt_rostopic_service-gnulinux;rtt_rosservice_registry-gnulinux;rtt_rosservice-gnulinux;orocos-rtt-gnulinux;pthread;rt;boost_filesystem;boost_system;boost_serialization;pthread;rt;dl;roscpp;pthread;rosconsole;rosconsole_log4cxx;rosconsole_backend_interface;roscpp_serialization;xmlrpcpp;rostime;cpp_common
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LIBRARY_DIRS:INTERNAL=/opt/ros/kinetic/lib/orocos/gnulinux/rtt_visualization_msgs/types;/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_geometry_msgs/types;/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/plugins;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_std_msgs/types;/opt/ros/kinetic/lib;/opt/ros/kinetic/lib/orocos/gnulinux/rtt_roscomm/plugins;/opt/ros/kinetic/lib
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LIBS:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LIBS_L:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LIBS_OTHER:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_STATIC_LIBS_PATHS:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_VERSION:INTERNAL=2.9.2
+rtt_visualization_msgs_COMP_gnulinux_rtt_visualization_msgs-gnulinux_INCLUDEDIR:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_rtt_visualization_msgs-gnulinux_LIBDIR:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_rtt_visualization_msgs-gnulinux_PREFIX:INTERNAL=
+rtt_visualization_msgs_COMP_gnulinux_rtt_visualization_msgs-gnulinux_VERSION:INTERNAL=
+//Mark viz_marker-gnulinux package as an Orocos package built in
+// this workspace
+viz_marker-gnulinux_OROCOS_PACKAGE:INTERNAL=True
 

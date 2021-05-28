@@ -1,0 +1,28 @@
+<package>
+  <name>viz_marker</name>
+  <version>1.0.0</version>
+  <description>The viz_Marker component facilitates the visualization in RVIZ from Orocos</description>
+  <maintainer email="unknown@maintainer.com">Erwin.Aertbelien@kuleuven.be</maintainer>
+
+  <license>GNU LGPL v3</license>
+
+  <url type="website"></url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <author>Erwin.Aertbelien@kuleuven.be</author>
+
+  <build_depend>rtt</build_depend>
+  <build_depend>orogen</build_depend>
+  <build_depend>rtt_ros</build_depend>
+  <build_depend>rtt_visualization_msgs</build_depend>
+  <run_depend>rtt</run_depend>
+
+  <run_depend>rtt_ros</run_depend>
+  <run_depend>rtt_rosnode</run_depend>
+  <run_depend>rtt_roscomm</run_depend>
+  <run_depend>rtt_rospack</run_depend>
+  <run_depend>rtt_visualization_msgs</run_depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,9 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find viz_marker)/rviz/empty.rviz" />
+    <include file="$(find etasl_rtt)/launch/rttlua.launch">
+        <arg name="RTTLUA_ARGS" value="$(find viz_marker)/scripts/deploy/deploy_viz.lua"/>
+        <arg name="INTERACTIVE" value="true"/>
+        <arg name="DEBUG" value="false"/>
+    </include>
+</launch>
+

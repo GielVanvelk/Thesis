@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/devel
+
+Name: motion_control_msgs
+Description: Description of motion_control_msgs
+Version: 0.0.0
+Cflags: -I/home/giel/etasl/ws/my_new_workspace/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

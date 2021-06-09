@@ -1,0 +1,2 @@
+set(motion_control_msgs_MESSAGE_FILES "/home/giel/etasl/ws/my_new_workspace/src/motion_control/motion_control_msgs/msg/JointAccelerations.msg;/home/giel/etasl/ws/my_new_workspace/src/motion_control/motion_control_msgs/msg/JointEfforts.msg;/home/giel/etasl/ws/my_new_workspace/src/motion_control/motion_control_msgs/msg/JointPositions.msg;/home/giel/etasl/ws/my_new_workspace/src/motion_control/motion_control_msgs/msg/JointVelocities.msg")
+set(motion_control_msgs_SERVICE_FILES "")

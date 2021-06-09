@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/devel
+
+Name: naxes_motion_control
+Description: Description of naxes_motion_control
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/install
+
+Name: soem_master
+Description: Description of soem_master
+Version: 0.1.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

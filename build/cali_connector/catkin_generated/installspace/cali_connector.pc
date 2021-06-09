@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/install
+
+Name: cali_connector
+Description: Description of cali_connector
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/devel
+
+Name: lwr_fri
+Description: Description of lwr_fri
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

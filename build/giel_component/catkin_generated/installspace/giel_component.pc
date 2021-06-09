@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/install
+
+Name: giel_component
+Description: Description of giel_component
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

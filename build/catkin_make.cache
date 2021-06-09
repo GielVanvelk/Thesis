@@ -1,2 +1,2 @@
-etasl_application_test:viz_marker
+ati_iface:cali_connector:etasl_application_test:giel_component:kuka-robot-hardware/lwr_fri:kuka-robot-hardware/lwr_fri_msgs:kuka-robot-hardware/rtt_lwr_fri_msgs:motion_control/cartesian_motion_control:motion_control/motion_control_msgs:motion_control/naxes_motion_control:motion_control/rtt_motion_control_msgs:rtt_soem/soem_beckhoff_drivers:rtt_soem/soem_ebox:rtt_soem/soem_master:viz_marker
 -DCATKIN_DEVEL_PREFIX=/home/giel/etasl/ws/my_new_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/giel/etasl/ws/my_new_workspace/install -G Unix Makefiles

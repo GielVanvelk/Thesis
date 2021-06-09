@@ -1,0 +1,8 @@
+prefix=/home/giel/etasl/ws/my_new_workspace/install
+
+Name: soem_beckhoff_drivers
+Description: Description of soem_beckhoff_drivers
+Version: 0.1.1
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

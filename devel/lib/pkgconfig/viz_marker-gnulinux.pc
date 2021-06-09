@@ -4,7 +4,6 @@ prefix=/home/giel/etasl/ws/my_new_workspace/devel
 libdir=${prefix}/lib
 includedir=${prefix}/include/orocos
 orocos_libdir=${libdir}/orocos/gnulinux/viz_marker
-
 Name: viz_marker-gnulinux
 Description: viz_marker-gnulinux package for Orocos
 Requires: orocos-rtt-gnulinux 

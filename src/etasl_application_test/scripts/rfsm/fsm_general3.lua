@@ -165,6 +165,15 @@ return rfsm.state {
   -- STATE: MOVE ALONG TRAJECTORY
   move_straight_line = rfsm.state {
     entry=function()
+
+      F2H = Your_component:getPort("out_force_too_high")
+      local fs, data= F2H:read()
+      local F2H= data
+
+      F2L = Your_component:getPort("out_force_too_low")
+      local fs, data= F2L:read()
+      local F2L= data
+
       print("Started Scanning")
       solver:create_and_set_solver("etaslcore")
       etaslcore:readTaskSpecificationFile(robot_etasl_dir)
